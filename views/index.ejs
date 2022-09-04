@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-sm">
+            <form action="/" method="post">
+                <label for="city name">City Name : </label>
+                <input type="text" name="city" id="city" placeholder="Enter city name">
+                <button type="submit"><iconify-icon icon="cil:search"></iconify-icon></button>
+            </form>
+            <h3>city : <%= data.location %></h3>
+            <h3>emperature  : <%= data.temp %></h3>
+            <h3>description : <%= data.desc %></h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+</body>
+</html>
